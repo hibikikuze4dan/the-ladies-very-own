@@ -2,12 +2,15 @@ import { Grid, GridList, GridListTile, Typography } from "@material-ui/core";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/card";
-import { getGenderSection } from "../../features/data/dataSlice";
-import { setGender, getGender } from "../../features/choices/choicesSlice";
+import { getEntourageSection } from "../../features/data/dataSlice";
+import {
+  setEntourageRole,
+  getEntourageRole,
+} from "../../features/choices/choicesSlice";
 
-const GenderSection = () => {
-  const { title, description, choices } = useSelector(getGenderSection);
-  const gender = useSelector(getGender);
+const EntourageSection = () => {
+  const { title, description, choices } = useSelector(getEntourageSection);
+  const role = useSelector(getEntourageRole);
   const dispatch = useDispatch();
 
   return (
@@ -36,8 +39,8 @@ const GenderSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() => dispatch(setGender(title))}
-                    picked={title === gender}
+                    handleClick={() => dispatch(setEntourageRole(title))}
+                    picked={title === role}
                     {...choice}
                   />
                 </GridListTile>
@@ -50,4 +53,4 @@ const GenderSection = () => {
   );
 };
 
-export default GenderSection;
+export default EntourageSection;

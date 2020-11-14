@@ -3,8 +3,6 @@ import { find, get } from "lodash";
 import { createSelector } from "reselect";
 import data from "../../data";
 
-console.log(data);
-
 const dataSlice = createSlice({
   name: "data",
   initialState: data,
@@ -16,6 +14,18 @@ export const getSections = (state) => {
 
 export const getGenderSection = createSelector(getSections, (sections) => {
   return find(sections, { title: "Gender" });
+});
+
+export const getEntourageSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Entourage Role" });
+});
+
+export const getDenizenSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Denizen Type" });
+});
+
+export const getAgeSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Your Lady's Age" });
 });
 
 export default dataSlice.reducer;

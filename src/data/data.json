@@ -21,6 +21,134 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Entourage Role",
+      "description": [
+        "All proper rulers of the night have an Entourage by their side, and your lady is no different. The four roles that comprise one have been upheld since antiquity, and you fall squarely in one of them.",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Knight",
+          "description": [
+            "The knight is the spear pointed outwards, the one that sheds blood for their lord far away from their demesne. A knight's day to day duties include the hunting of prey for their master, patrolling their liege's lands and ensuring they remain free of undesirables and upholding said liege's authority wherever they go."
+          ]
+        },
+        {
+          "title": "Headservant",
+          "description": [
+            "The headservant is the shield to the knight's spear. Always close to their lieges, headservants work and toil to ensure their master's safety, comfort and happiness. Usually, they are considered to speak with their lord's authority and can give orders to the other members of their liege's Entourage."
+          ]
+        },
+        {
+          "title": "Chamberlain",
+          "description": [
+            "As chamberlain, you ensure that your lady remains unassailed by the stress of managing her vast riches and that said riches don't unduly diminish. By the nature of their work, chamberlains are the ones that interact with the world of the day the most, and so are also tasked with maintaining their liege and the rest of the night hidden at any cost."
+          ]
+        },
+        {
+          "title": "Hidden Blade",
+          "description": [
+            "There are tasks that require a special sort of secrecy, and for those tasks were those such as you found. Hidden Blades carry out assassinations, espionage, contraband, and other unseemly things in the name of their liege, against enemies both within and without vampire society."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Denizen Type",
+      "description": [
+        "Almost as important as the service you render is you own nature as a denizen of the night. What, exactly, are you?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Human",
+          "description": [
+            "As a human, you lack the unnatural strength and powers of those that dwell in the dark, but your cleverness more than makes up for it.",
+            "Moreover, you also lack the multitude of weakness that plague supernatural creatures. There's a reason humans are the dominant species in the planet, after all."
+          ]
+        },
+        {
+          "title": "Vampire",
+          "description": [
+            "The self-proclaimed kings of the night possess many powers, such as shapeshifting into various animals or mist, a gaze able to place the weak-willed under their control, and strong regeneration. However they also have a plethora of weakness, from the sun rendering them weaker than a human child to not being able to cross running water, passing through holy symbols and garlic."
+          ]
+        },
+        {
+          "title": "Lycanthrope",
+          "description": [
+            "Lycanthropes are among the most feared beings that go bump in the night, deservedly so, for they possess peerless strength, skin though enough to deflect blades and their wounds close so fast that blows look like they have no effect. Yet their weakness to silver is well known, even the most slight contact with pure enough silver will make a lycanthrope's blood rot and poison their body."
+          ]
+        },
+        {
+          "title": "Stranger",
+          "description": [
+            "The gods of the void are feared beyond measure, gargantuan entities that can crush civilizations like one does an ant, but what of their lesser kin? For those weak ones, the void is a horrible place, and when they manage to anchor themselves to any reality, they'll clutch to it with all their strength. Strange beings yet so surprisingly human, as long as the mask remains on."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Your Lady's Age",
+      "description": [
+        "Now, there's the matter of your lady. As a vampire, perhaps the most important question about her is her age. How long has it take her to gather all her power, and most importantly, get you in her service?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Youngling",
+          "description": [
+            "So young she might be as well be a mortal, her appearance matching her age. By what miraculous situation could she have acquired so much power, power that evades those a century her senior? And how could she get your servitude, much less gather an entourage? Perhaps you were willing, and that's the reason for her success?",
+            "Gain a normal perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0
+          }
+        },
+        {
+          "title": "Matured",
+          "description": [
+            "A proper vampire, a century or two older than her appearance would suggest. It's at this age that vampires begin to expand their influence, attempting to go from mere predators to lofty lords. Your lady has been splendidly successful, owing to industrious work from both of you.",
+            "Gain a class talent."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0
+          }
+        },
+        {
+          "title": "Elder",
+          "description": [
+            "It's only logical that your lady would have an Entourage, with her great clout and age. She has seen many, many things in her more than five hundred years of age and has great experience on many fronts. By being so close to her for so long, some of it has stuck with you.",
+            "Gain a special talent."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 1,
+            "normalPerks": 0,
+            "alteredPerks": 0
+          }
+        },
+        {
+          "title": "Ancient",
+          "description": [
+            "A being so old that it can only be called a vampire for her thirst for blood, a being that has been called both god and demon. You do not know why she chose you, but you should feel honored. Being bound by blood to such an idiosyncratic being has made you the only person that, perhaps, she can call kin.",
+            "Gain an altered perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 1
+          }
+        }
+      ]
     }
   ]
 }

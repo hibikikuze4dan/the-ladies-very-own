@@ -9,6 +9,9 @@ import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import GenderSection from "./sections/gender";
+import EntourageSection from "./sections/entourage";
+import DenizenTypeSection from "./sections/denizen";
+import AgeSection from "./sections/age";
 
 function App() {
   return (
@@ -25,6 +28,30 @@ function App() {
           </AccordionSummary>
           <AccordionDetails>
             <GenderSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Entourage</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <EntourageSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Denizen Type</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <DenizenTypeSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Your Lady's Age</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <AgeSection />
           </AccordionDetails>
         </Accordion>
         <span>

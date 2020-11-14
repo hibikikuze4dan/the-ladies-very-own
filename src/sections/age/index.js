@@ -2,12 +2,12 @@ import { Grid, GridList, GridListTile, Typography } from "@material-ui/core";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/card";
-import { getGenderSection } from "../../features/data/dataSlice";
-import { setGender, getGender } from "../../features/choices/choicesSlice";
+import { getAgeSection } from "../../features/data/dataSlice";
+import { setAge, getAgeTitle } from "../../features/choices/choicesSlice";
 
-const GenderSection = () => {
-  const { title, description, choices } = useSelector(getGenderSection);
-  const gender = useSelector(getGender);
+const AgeSection = () => {
+  const { title, description, choices } = useSelector(getAgeSection);
+  const age = useSelector(getAgeTitle);
   const dispatch = useDispatch();
 
   return (
@@ -32,12 +32,12 @@ const GenderSection = () => {
         <Grid container>
           <GridList>
             {choices.map((choice, index) => {
-              const { title } = choice;
+              console.log(choice, age);
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() => dispatch(setGender(title))}
-                    picked={title === gender}
+                    handleClick={() => dispatch(setAge(choice))}
+                    picked={choice.title === age}
                     {...choice}
                   />
                 </GridListTile>
@@ -50,4 +50,4 @@ const GenderSection = () => {
   );
 };
 
-export default GenderSection;
+export default AgeSection;

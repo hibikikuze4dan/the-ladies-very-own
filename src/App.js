@@ -1,7 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Typography,
+} from "@material-ui/core";
+import logo from "./logo.svg";
+import { Counter } from "./features/counter/Counter";
+import "./App.css";
+import GenderSection from "./sections/gender";
 
 function App() {
   return (
@@ -12,6 +19,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Gender</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <GenderSection />
+          </AccordionDetails>
+        </Accordion>
         <span>
           <span>Learn </span>
           <a

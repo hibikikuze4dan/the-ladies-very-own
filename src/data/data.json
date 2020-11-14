@@ -1,0 +1,26 @@
+{
+  "title": "The Lady's Very Own",
+  "sections": [
+    {
+      "title": "Gender",
+      "description": [
+        "The night has begun in earnest, moon shining bright and full, and so your lady has need of you, her most important servant. But before you make haste, a small question, are you man or damsel?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Male",
+          "description": [
+            "A gentleman should always have a lady to serve, as is proper, common, and known, more so when she is a lady of the night. Continue with your work, good sir, and do not keep your lady waiting."
+          ]
+        },
+        {
+          "title": "Female",
+          "description": [
+            "There are those that would consider such a close relationship between women preposterous, but beings of the night like your lady care not for them. After all, how does sex matter for those that can't bear nor sire children, and possess unnatural strength? Continue your tasks, fair damsel, and do not keep the lady waiting."
+          ]
+        }
+      ]
+    }
+  ]
+}

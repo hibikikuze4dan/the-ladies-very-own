@@ -149,6 +149,136 @@
           }
         }
       ]
+    },
+    {
+      "title": "Your Lady's Appearance",
+      "description": [
+        "Next is her appearance. Vampires are vain creatures by nature, and there is no doubt your lady strives to make the best of whatundeath granted her.",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Wolf Among Sheep",
+          "description": [
+            "Your lady is practically indistinguishable from a human being, and only her beauty and sharp fangs might give something away. Some days you could almost forget what she is, and what you are to her, so normal do her actions look. It doesn't help, that she is so dedicated to her hobbies.",
+            "Your lady has an extra hobby."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 1
+          }
+        },
+        {
+          "title": "Unnatural Semblance",
+          "description": [
+            "Corpse-like paleness, cold as death, fangs that spring from her mouth and hair that moves on its own. Your lady is recognizable as a vampire by anyone with the smallest clue about the supernatural, so you are all the more diligent to protect her from those that realize the truth.",
+            "Gain a class talent."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Beautiful Corpse",
+          "description": [
+            "Deathly wounds still open, eyes like glass, and mist that hangs on her like a constant veil. Yet those things that should be horrible are instead beautiful, perhaps because it's your lady who bears them. Still, no one can deny that her closeness with death grants her power, and as her servant so does it to you.",
+            "Gain a normal perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Inhuman Aspect",
+          "description": [
+            "Truly, most would not think your lady a vampire. With horns, tails, and claws, she looks more like a demon or even a dragon than a vampire. Just what strange circumstances have made her look like so? But such strange blood has it's advantages, as you can tell.",
+            "Gain an altered perk "
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 1,
+            "hobbies": 0
+          }
+        }
+      ]
+    },
+    {
+      "title": "Your Lady's Nature",
+      "description": [
+        "In all the years you have been by her side, you have grown to know your lady well. What would you say is her nature?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Innocent Doll",
+          "description": [
+            "Your lady is the very image of purity, childish wonder and behavior almost overpowering the predator within. It is saddening that such a flower needs to be watered by blood, but you'll ensure it grows, protected and smiling.",
+            "Gain a class talent."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Arrogant Youth",
+          "description": [
+            "Is it not true that your lady has vast riches, powers and most of all, you by her side? Then why should she bother with fake humility, when she stands high above so many others? Her smug demeanor is constant, and to back it up, you have honed yourself.",
+            "Gain a normal perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Alluring Temptress",
+          "description": [
+            "Your lady takes enjoyment in being the kind of death men desire and fantasize about. Even you are not spared her teasing charms, in fact, she seems to focus them on you. Still, such beauty, even when it lies far, is bound to attract undesirables, which you'll have to deal with.",
+            "Gain a normal perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Plucked Flower",
+          "description": [
+            "Your lady bears her position like a crown of thorns, with pained somberness and regal coldness. Indeed, undeath has not been kind to her unbeating heart, and many wounds still lie open within. You do what you can to comfort her, of course, but some things might be beyond help.",
+            "Gain a class talent."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        }
+      ]
     }
   ]
 }

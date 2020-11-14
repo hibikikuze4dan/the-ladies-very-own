@@ -18,11 +18,32 @@ const choicesSlice = createSlice({
         alteredPerks: 0,
       },
     },
+    appearance: {
+      title: "",
+      description: "",
+      perks: {
+        classTalents: 0,
+        specialTalents: 0,
+        normalPerks: 0,
+        alteredPerks: 0,
+      },
+    },
+    nature: {
+      title: "",
+      description: "",
+      perks: {
+        classTalents: 0,
+        specialTalents: 0,
+        normalPerks: 0,
+        alteredPerks: 0,
+      },
+    },
     defaultPerks: {
       classTalents: 1,
       specialTalents: 0,
       normalPerks: 1,
       alteredPerks: 0,
+      hobbies: 1,
     },
   },
   reducers: {
@@ -38,6 +59,12 @@ const choicesSlice = createSlice({
     setAge: (state, action) => {
       state.age = action.payload;
     },
+    setAppearance: (state, action) => {
+      state.appearance = action.payload;
+    },
+    setNature: (state, action) => {
+      state.nature = action.payload;
+    },
   },
 });
 
@@ -46,6 +73,8 @@ export const {
   setEntourageRole,
   setDenizen,
   setAge,
+  setAppearance,
+  setNature,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -66,6 +95,25 @@ export const getAge = (state) => {
 
 export const getAgeTitle = createSelector(getAge, (ageData) => {
   return get(ageData, "title");
+});
+
+export const getAppearance = (state) => {
+  return get(state, "choices.appearance");
+};
+
+export const getAppearanceTitle = createSelector(
+  getAppearance,
+  (appearanceData) => {
+    return get(appearanceData, "title");
+  }
+);
+
+export const getNature = (state) => {
+  return get(state, "choices.nature");
+};
+
+export const getNatureTitle = createSelector(getNature, (natureData) => {
+  return get(natureData, "title");
 });
 
 export default choicesSlice.reducer;

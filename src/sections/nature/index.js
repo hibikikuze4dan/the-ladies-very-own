@@ -2,12 +2,12 @@ import { Grid, GridList, GridListTile, Typography } from "@material-ui/core";
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/card";
-import { getAgeSection } from "../../features/data/dataSlice";
-import { setAge, getAgeTitle } from "../../features/choices/choicesSlice";
+import { getNatureSection } from "../../features/data/dataSlice";
+import { setNature, getNatureTitle } from "../../features/choices/choicesSlice";
 
-const AgeSection = () => {
-  const { title, description, choices } = useSelector(getAgeSection);
-  const age = useSelector(getAgeTitle);
+const NatureSection = () => {
+  const { title, description, choices } = useSelector(getNatureSection);
+  const nature = useSelector(getNatureTitle);
   const dispatch = useDispatch();
 
   return (
@@ -35,8 +35,8 @@ const AgeSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() => dispatch(setAge(choice))}
-                    picked={choice.title === age}
+                    handleClick={() => dispatch(setNature(choice))}
+                    picked={choice.title === nature}
                     {...choice}
                   />
                 </GridListTile>
@@ -49,4 +49,4 @@ const AgeSection = () => {
   );
 };
 
-export default AgeSection;
+export default NatureSection;

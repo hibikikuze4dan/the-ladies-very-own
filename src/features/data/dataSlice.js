@@ -28,4 +28,12 @@ export const getAgeSection = createSelector(getSections, (sections) => {
   return find(sections, { title: "Your Lady's Age" });
 });
 
+export const getAppearanceSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Your Lady's Appearance" });
+});
+
+export const getNatureSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Your Lady's Nature" });
+});
+
 export default dataSlice.reducer;

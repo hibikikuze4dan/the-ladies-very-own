@@ -279,6 +279,104 @@
           }
         }
       ]
+    },
+    {
+      "title": "Your Lady's Origins",
+      "description": [
+        "And in those same years, she grew enough trust in you to share her origins. How did she lose her mortality and became what she is?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Embraced",
+          "description": [
+            "The most common birth of a vampire, and also the most tumultuous. The web of relationships between progenitors and embraced can very easily turn or be turned into an asphyxiating rope. It is a good thing that your lady walked out of it relatively unscathed. Still, debts remain.",
+            "Gain a class talent."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Born Cold",
+          "description": [
+            "It is a miraculous happenstance, far rarer than a hen's tooth or a serpent's foot, but sometimes a barren womb and dead seed produce further unlife. The resulting children are more powerful than their brethren, and undoubtedly more cherished. Your lady must have had a beautiful childhood.",
+            "Your lady has an extra hobby."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 1
+          }
+        },
+        {
+          "title": "Eschewed Mortality",
+          "description": [
+            "There are those adept enough in the arts of blackest magic to separate the indivisible and remove the humanity from themselves in a bound to seize eternity. Your lady has a deep understanding of mutation between one nature and another, and so you can reap the benefits.",
+            "Gain an altered perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 1,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Vengeful Dead",
+          "description": [
+            "Your lady's death was a humiliating, sordid affair. One that left a festering wound and a simmering rage in her soul. Stains big enough that only did they push the soul to pull itself together, but also raise the body in a mockery of life. You do not know what reparations she intends to demand, only that you better ready yourself for when the time comes.",
+            "Gain a normal perk."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        }
+      ]
+    },
+    {
+      "title": "Your Relationship With Your Lady",
+      "description": [
+        "Be honest, after all these years, how would you describe your relationship with your lady?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Cold and Proper",
+          "description": [
+            "Duty and respect are the most important part of your relationship, endearment and trust are there, but they are secondary. She is your lady, and for that reason do you serve, if she were not, you would serve another. That is how it should be for all lords and ladies of the night. How surprisingly sensible."
+          ]
+        },
+        {
+          "title": "Mutually Beneficial",
+          "description": [
+            "Honor and duty are fine pursuits, but both your lady and you know that the bond between you is a bit more pragmatical. It isn't that you don't care about each other, but both of you understand that your service isn't free and neither is her goodwill. As long as both of you continue to play your parts your mutual contract will remain standing, but not a day longer."
+          ]
+        },
+        {
+          "title": "Almost Family",
+          "description": [
+            "You being her vassal might as well be a charade, for it is obvious how much you care about each other. Even if she were not your lady, you still would aid her however you can, and even if you were incapable of rendering any service, still would she protect and care for you. An enviable relationship, yet one that can bring much pain."
+          ]
+        },
+        {
+          "title": "Licentiously Warm",
+          "description": [
+            "It is taboo for liege and vassal to be so bound by passion, but for a being that has eternity ahead of her, a taboo is nothing but something to delight in breaking. She loves you with a flame that matches any living one, and perhaps you feel the same."
+          ]
+        }
+      ]
     }
   ]
 }

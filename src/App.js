@@ -14,6 +14,8 @@ import DenizenTypeSection from "./sections/denizen";
 import AgeSection from "./sections/age";
 import AppearanceSection from "./sections/appearance";
 import NatureSection from "./sections/nature";
+import OriginSection from "./sections/origins";
+import RelationshipSection from "./sections/relationship";
 
 function App() {
   return (
@@ -70,6 +72,22 @@ function App() {
           </AccordionSummary>
           <AccordionDetails>
             <NatureSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Your Lady's Origins</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <OriginSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>Your Relationship With Your Lady</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <RelationshipSection />
           </AccordionDetails>
         </Accordion>
         <span>

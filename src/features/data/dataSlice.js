@@ -36,4 +36,15 @@ export const getNatureSection = createSelector(getSections, (sections) => {
   return find(sections, { title: "Your Lady's Nature" });
 });
 
+export const getOriginSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Your Lady's Origins" });
+});
+
+export const getRelationshipSection = createSelector(
+  getSections,
+  (sections) => {
+    return find(sections, { title: "Your Relationship With Your Lady" });
+  }
+);
+
 export default dataSlice.reducer;

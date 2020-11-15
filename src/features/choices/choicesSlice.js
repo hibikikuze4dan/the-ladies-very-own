@@ -38,6 +38,17 @@ const choicesSlice = createSlice({
         alteredPerks: 0,
       },
     },
+    origins: {
+      title: "",
+      description: "",
+      perks: {
+        classTalents: 0,
+        specialTalents: 0,
+        normalPerks: 0,
+        alteredPerks: 0,
+      },
+    },
+    relationship: "",
     defaultPerks: {
       classTalents: 1,
       specialTalents: 0,
@@ -65,6 +76,12 @@ const choicesSlice = createSlice({
     setNature: (state, action) => {
       state.nature = action.payload;
     },
+    setOrigins: (state, action) => {
+      state.origins = action.payload;
+    },
+    setRelationship: (state, action) => {
+      state.relationship = action.payload;
+    },
   },
 });
 
@@ -75,6 +92,8 @@ export const {
   setAge,
   setAppearance,
   setNature,
+  setOrigins,
+  setRelationship,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -115,5 +134,17 @@ export const getNature = (state) => {
 export const getNatureTitle = createSelector(getNature, (natureData) => {
   return get(natureData, "title");
 });
+
+export const getOrigins = (state) => {
+  return get(state, "choices.origins");
+};
+
+export const getOriginsTitle = createSelector(getOrigins, (originsData) => {
+  return get(originsData, "title");
+});
+
+export const getRelationship = (state) => {
+  return get(state, "choices.relationship");
+};
 
 export default choicesSlice.reducer;

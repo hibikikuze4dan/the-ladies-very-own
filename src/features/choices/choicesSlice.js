@@ -6,8 +6,14 @@ const choicesSlice = createSlice({
   name: "choices",
   initialState: {
     gender: "",
-    entourageRole: "",
-    denizenType: "",
+    entourageRole: {
+      primary: "",
+      secondary: "",
+    },
+    denizenType: {
+      primary: "",
+      secondary: "",
+    },
     age: {
       title: "",
       description: "",
@@ -49,6 +55,16 @@ const choicesSlice = createSlice({
       },
     },
     relationship: "",
+    reason: {
+      title: "",
+      description: "",
+      perks: {
+        classTalents: 0,
+        specialTalents: 0,
+        normalPerks: 0,
+        alteredPerks: 0,
+      },
+    },
     defaultPerks: {
       classTalents: 1,
       specialTalents: 0,
@@ -62,10 +78,16 @@ const choicesSlice = createSlice({
       state.gender = action.payload;
     },
     setEntourageRole: (state, action) => {
-      state.entourageRole = action.payload;
+      state.entourageRole = {
+        ...state.entourageRole,
+        ...action.payload,
+      };
     },
     setDenizen: (state, action) => {
-      state.denizenType = action.payload;
+      state.denizenType = {
+        ...state.denizenType,
+        ...action.payload,
+      };
     },
     setAge: (state, action) => {
       state.age = action.payload;
@@ -82,6 +104,9 @@ const choicesSlice = createSlice({
     setRelationship: (state, action) => {
       state.relationship = action.payload;
     },
+    setReason: (state, action) => {
+      state.reason = action.payload;
+    },
   },
 });
 
@@ -94,6 +119,7 @@ export const {
   setNature,
   setOrigins,
   setRelationship,
+  setReason,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -104,9 +130,31 @@ export const getEntourageRole = (state) => {
   return get(state, "choices.entourageRole");
 };
 
+export const getPrimaryEntourageRole = createSelector(
+  getEntourageRole,
+  (role) => {
+    return get(role, "primary");
+  }
+);
+
+export const getSecondaryEntourageRole = createSelector(
+  getEntourageRole,
+  (role) => {
+    return get(role, "secondary");
+  }
+);
+
 export const getDenizen = (state) => {
   return get(state, "choices.denizen");
 };
+
+export const getPrimaryDenizenType = createSelector(getDenizen, (denizen) => {
+  return get(denizen, "primary");
+});
+
+export const getSecondaryDenizenType = createSelector(getDenizen, (denizen) => {
+  return get(denizen, "secondary");
+});
 
 export const getAge = (state) => {
   return get(state, "choices.age");
@@ -146,5 +194,13 @@ export const getOriginsTitle = createSelector(getOrigins, (originsData) => {
 export const getRelationship = (state) => {
   return get(state, "choices.relationship");
 };
+
+export const getReason = (state) => {
+  return get(state, "choices.reason");
+};
+
+export const getReasonTitle = createSelector(getReason, (reasonData) => {
+  return get(reasonData, "title");
+});
 
 export default choicesSlice.reducer;

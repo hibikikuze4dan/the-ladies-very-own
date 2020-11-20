@@ -377,6 +377,71 @@
           ]
         }
       ]
+    },
+    {
+      "title": "What makes you special",
+      "description": [
+        "Now, there must be a reason your lady holds you in such high esteem. What makes you special?",
+        "Choose One"
+      ],
+      "choices": [
+        {
+          "title": "Hybrid",
+          "description": [
+            "You're a creature betwixt two natures, granting you the strengths of both. Being such a truly strange thing has made you both very useful and very valuable to your lady.",
+            "Gain a normal perk, and normal perks can now be selected from your chosen species' section and another species' of your choice."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 1,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Talented",
+          "description": [
+            "You are by nature far superior to most members of your kind. Having skills, talent, and potential that can't be matched by others, no matter how hard they train or exert themselves, means you're quite irreplaceable.",
+            "Gain two normal perks."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 2,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Versatile",
+          "description": [
+            "While most members of an Entourage are handpicked for their skills at a single role, your lady chose you, at least in part, for your superb skills at two of the roles within an Entourage.",
+            "Gain a class talent, and class talents can now be selected from your chosen class' section and another classes' of your choice."
+          ],
+          "perks": {
+            "classTalents": 1,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 0
+          }
+        },
+        {
+          "title": "Bacchian",
+          "description": [
+            "You're simply a joy to be around, your lady might spin tales of any other reason for having you at her side, but at the end of the day, it's because of the uplifting effect you have on her that she made you part of her Entourage. In fact, you make her mood so light she engages in activities she might not necessarily enjoy just because you do them with her.",
+            "Your lady has two extra hobbies."
+          ],
+          "perks": {
+            "classTalents": 0,
+            "specialTalents": 0,
+            "normalPerks": 0,
+            "alteredPerks": 0,
+            "hobbies": 2
+          }
+        }
+      ]
     }
   ]
 }

@@ -5,12 +5,12 @@ import Card from "../../components/card";
 import { getEntourageSection } from "../../features/data/dataSlice";
 import {
   setEntourageRole,
-  getEntourageRole,
+  getPrimaryEntourageRole,
 } from "../../features/choices/choicesSlice";
 
 const EntourageSection = () => {
   const { title, description, choices } = useSelector(getEntourageSection);
-  const role = useSelector(getEntourageRole);
+  const role = useSelector(getPrimaryEntourageRole);
   const dispatch = useDispatch();
 
   return (
@@ -39,7 +39,9 @@ const EntourageSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() => dispatch(setEntourageRole(title))}
+                    handleClick={() =>
+                      dispatch(setEntourageRole({ primary: title }))
+                    }
                     picked={title === role}
                     {...choice}
                   />

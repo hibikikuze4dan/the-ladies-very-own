@@ -3,11 +3,14 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/card";
 import { getDenizenSection } from "../../features/data/dataSlice";
-import { setDenizen, getDenizen } from "../../features/choices/choicesSlice";
+import {
+  setDenizen,
+  getPrimaryDenizenType,
+} from "../../features/choices/choicesSlice";
 
 const DenizenTypeSection = () => {
   const { title, description, choices } = useSelector(getDenizenSection);
-  const type = useSelector(getDenizen);
+  const type = useSelector(getPrimaryDenizenType);
   const dispatch = useDispatch();
 
   return (
@@ -36,7 +39,7 @@ const DenizenTypeSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() => dispatch(setDenizen(title))}
+                    handleClick={() => dispatch(setDenizen({ primary: title }))}
                     picked={title === type}
                     {...choice}
                   />

@@ -16,6 +16,7 @@ import AppearanceSection from "./sections/appearance";
 import NatureSection from "./sections/nature";
 import OriginSection from "./sections/origins";
 import RelationshipSection from "./sections/relationship";
+import ReasonSection from "./sections/reason";
 
 function App() {
   return (
@@ -88,6 +89,14 @@ function App() {
           </AccordionSummary>
           <AccordionDetails>
             <RelationshipSection />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary>
+            <Typography>What Makes You Special</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <ReasonSection />
           </AccordionDetails>
         </Accordion>
         <span>

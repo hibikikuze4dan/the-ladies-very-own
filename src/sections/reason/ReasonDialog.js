@@ -50,8 +50,6 @@ const ReasonDialog = ({ type, open, handleClose }) => {
     return null;
   };
 
-  console.log(choices, type);
-
   return (
     <Dialog open={open} onClose={() => handleClose(!open)}>
       <DialogTitle>{title}</DialogTitle>

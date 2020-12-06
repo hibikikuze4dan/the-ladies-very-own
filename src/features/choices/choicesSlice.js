@@ -1,7 +1,7 @@
 import { createSelector } from "reselect";
 import { createSlice } from "@reduxjs/toolkit";
-import { get } from "lodash";
-import { fromJS } from 'immutable';
+import { get, includes, isEqual } from "lodash";
+import { fromJS } from "immutable";
 
 const choicesSlice = createSlice({
   name: "choices",
@@ -73,6 +73,8 @@ const choicesSlice = createSlice({
       alteredPerks: 0,
       hobbies: 1,
     },
+    perks: [],
+    perksShown: "Human",
   },
   reducers: {
     setGender: (state, action) => {
@@ -108,6 +110,19 @@ const choicesSlice = createSlice({
     setReason: (state, action) => {
       state.reason = action.payload;
     },
+    setPerksShown: (state, action) => {
+      state.perksShown = action.payload;
+    },
+    updatePerks: (state, action) => {
+      const perks = state.perks.map((perk) => perk.title);
+      if (includes(perks, action.payload.title)) {
+        state.perks = state.perks.filter((perk) => {
+          return !isEqual(perk, action.payload);
+        });
+      } else {
+        state.perks = [...state.perks, action.payload];
+      }
+    },
   },
 });
 
@@ -121,6 +136,8 @@ export const {
   setOrigins,
   setRelationship,
   setReason,
+  setPerksShown,
+  updatePerks,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -150,7 +167,6 @@ export const getDenizen = (state) => {
 };
 
 export const getPrimaryDenizenType = createSelector(getDenizen, (denizen) => {
-  console.log(denizen);
   return get(denizen, "primary");
 });
 
@@ -203,6 +219,20 @@ export const getReason = (state) => {
 
 export const getReasonTitle = createSelector(getReason, (reasonData) => {
   return get(reasonData, "title");
+});
+
+export const getPerksShown = (state) => {
+  return state?.choices?.perksShown;
+};
+
+export const getPerks = (state) => {
+  return state?.choices?.perks;
+};
+
+export const getPerksTitles = createSelector(getPerks, (perks) => {
+  return perks.map((perk) => {
+    return perk.title;
+  });
 });
 
 export default choicesSlice.reducer;

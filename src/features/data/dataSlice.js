@@ -3,6 +3,7 @@ import { find, get } from "lodash";
 import { createSelector } from "reselect";
 import data from "../../data";
 import {
+  getPerksShown,
   getPrimaryDenizenType,
   getPrimaryEntourageRole,
   getSecondaryDenizenType,
@@ -56,9 +57,7 @@ export const getDenizenChoices = createSelector(
 export const getFilteredDenizenChoices = createSelector(
   [getDenizenChoices, getPrimaryDenizenType, getSecondaryDenizenType],
   (choices, primary, secondary) => {
-    console.log(secondary);
     return choices.filter((choice) => {
-      console.log(choice.title);
       return choice.title !== primary && choice.title !== secondary;
     });
   }
@@ -90,5 +89,22 @@ export const getRelationshipSection = createSelector(
 export const getReasonSection = createSelector(getSections, (sections) => {
   return find(sections, { title: "What makes you special" });
 });
+
+export const getPerksSections = createSelector(getSections, (sections) => {
+  return {
+    Human: find(sections, { title: "Human Perks" }),
+    Vampire: find(sections, { title: "Vampire Perks" }),
+    Lycanthrope: find(sections, { title: "Lycanthrope Perks" }),
+    Stranger: find(sections, { title: "Stranger Perks" }),
+  };
+});
+
+export const getCurrentPerkSection = createSelector(
+  getPerksSections,
+  getPerksShown,
+  (perksSections, perksShown) => {
+    return perksSections[perksShown];
+  }
+);
 
 export default dataSlice.reducer;

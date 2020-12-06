@@ -6,7 +6,7 @@ import { getEntourageSection } from "../../features/data/dataSlice";
 import {
   setEntourageRole,
   getPrimaryEntourageRole,
-  getSecondaryEntourageRole
+  getSecondaryEntourageRole,
 } from "../../features/choices/choicesSlice";
 
 const EntourageSection = () => {

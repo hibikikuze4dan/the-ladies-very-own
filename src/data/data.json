@@ -610,6 +610,256 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Knight Talents",
+      "description": [],
+      "choices": [
+        {
+          "title": "Procuring Sustenance",
+          "description": [
+            "You specialize in capturing humans and offering their blood and lives to your lady. Needless to say, you are an expert at erasing your tracks."
+          ]
+        },
+        {
+          "title": "Deuling",
+          "description": [
+            "Sometimes another lord insults your lady, and insults demand properly spilled blood. You don't remember ever losing a duel, always winning honor for your lady."
+          ]
+        },
+        {
+          "title": "Keeping Order",
+          "description": [
+            "Even in these modern days, the state of the land reflects on her ruler, so you keep her blemishless. Your skill at removing undesirables and ensuring your lady's orders are obeyed is unmatched."
+          ]
+        },
+        {
+          "title": "Recovering Regalias",
+          "description": [
+            "You find and extract artifacts of immense power all around the world so that they might be placed in your lady's treasury."
+          ]
+        },
+        {
+          "title": "Unholy Knight",
+          "description": [
+            "After many of their hunts against your lady, you've grown to know and outmatch the fighting tactics and skills of priests, shamans, monks, and other holy men."
+          ]
+        },
+        {
+          "title": "Dragon Slaying",
+          "description": [
+            "You find and hunt the greatest beings of the night so that your lady might sup on their mighty and peerless blood."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Headservant Talents",
+      "description": [],
+      "choices": [
+        {
+          "title": "Security",
+          "description": [
+            "You're an expert at ensuring that your lady's home is secure: that no servant slips or betrays, that there are no holes that rats, or bigger hassles, can scurry through."
+          ]
+        },
+        {
+          "title": "Taking Out The Trash",
+          "description": [
+            "There is no shortage of garbage in your daily routine: the leftovers of your lady's meals, traitorous servants, the tools of arrogant upstarts, and many more. You make most of it banish without a trace."
+          ]
+        },
+        {
+          "title": "Recruiting Talent",
+          "description": [
+            "Your lady should only be served by the best of the best, and by screening and testing hundreds of candidates you've become able to judge someone's worth at a glance."
+          ]
+        },
+        {
+          "title": "Forging The Inept",
+          "description": [
+            "You are an expert at turning younglings that wouldn't be able to even suck a teat into feared lords of the night."
+          ]
+        },
+        {
+          "title": "Pampering The Lady",
+          "description": [
+            "You know every little idiosyncrasy of your lady and have made an art out of attending to her desires. Often you give her what she wants even before she knows she wants it."
+          ]
+        },
+        {
+          "title": "Unfailing Aegis",
+          "description": [
+            "Even if worst comes to worst you know you'll keep your lady safe from harm, for when you fight not a single enemy will go past you, even if it costs you everything."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chamberlain Talents",
+      "description": [],
+      "choices": [
+        {
+          "title": "Entertaining Guests",
+          "description": [
+            "You're equally skilled at conversation, flattery, bargaining, and fishing for information, making your meetings with your lady's guests useful and almost pleasant."
+          ]
+        },
+        {
+          "title": "Acquiring Funds",
+          "description": [
+            "Your lady's fortune is big, but not infinite. With a keen mind for investments and business, you ensure it mostly grows."
+          ]
+        },
+        {
+          "title": "Extracting Reparations",
+          "description": [
+            "Some attacks upon your lady are so dire that to accept mere gold or blood as appeasement would be a sign of weakness. In those rare occasions you know how to truly take everything from those fools."
+          ]
+        },
+        {
+          "title": "The Masquerade",
+          "description": [
+            "Even in this age of technology, you excel at stopping the spread of knowledge of the world of the night, taking down or falsely disproving any evidence that might be found."
+          ]
+        },
+        {
+          "title": "Undermine Upstarts",
+          "description": [
+            "There's always a new lord or lady that, emboldened by their own successes, tries to oust your lady from her position. You know just how to show them how much of a mistake they are committing."
+          ]
+        },
+        {
+          "title": "Sealing Pacts",
+          "description": [
+            "There are beings greater than you, and, in the very rare occasions that you are caught in their stirrings, your knowledge of them and willingness to do what's necessary give you and your lady greater chances of survival."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Hidden Blade Talents",
+      "description": [],
+      "choices": [
+        {
+          "title": "Infiltrating",
+          "description": [
+            "You're incredibly skilled at going unnoticed and scurrying past seemingly impenetrable defenses. Indeed, some think you a ghost in the night."
+          ]
+        },
+        {
+          "title": "Counterespionage",
+          "description": [
+            "Years of experience and sharp instincts allow you to tell when there are listening ears and prying eyes that shouldn't be there. You have made an art out of plucking them out."
+          ]
+        },
+        {
+          "title": "Keeping The Masquerade",
+          "description": [
+            "Sometimes Chamberlains slip and the truth gets out there. You have a talent for finding and shutting down the eyes that see it."
+          ]
+        },
+        {
+          "title": "Perfect Mask",
+          "description": [
+            "You're an expert at faking who you are. Managing two or three lives and many more fake loyalties is child's play to you."
+          ]
+        },
+        {
+          "title": "Contraband",
+          "description": [
+            "You know how and have the means to move things from there to there fast and discreetly. Useful for satisfying your lady's more extravagant demands."
+          ]
+        },
+        {
+          "title": "Seizing Thrones",
+          "description": [
+            "Your skills are particularly suited at undermining the influence of the powerful in many ways until their seat is freed and ready for being taken."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Your Lady's Hobbies",
+      "description": [
+        "Much like your entire existence is not dedicated to her service, your lady has things that she enjoys doing when she is not busy ruling over the night.",
+        "Choose one plus as many extra hobbies you have gained."
+      ],
+      "choices": [
+        {
+          "title": "Fine Wine",
+          "description": [
+            "Your lady appreciates alcohol in all of its forms, but the drink she cherishes the most is red wine. An easy way to get her in a good mood is gifting her a good bottle of reserve wine.",
+            "Despite her vampiric resistance to alcohol, there are days where she partakes enough to become fully inebriated, becoming far more affectionate than usual."
+          ]
+        },
+        {
+          "title": "Music",
+          "description": [
+            "You often hear the sound of an instrument coming from your lady's room, being played with consumate skill. She has the required knowledge of classical music to not be considered a philistine by vampire society, but, in private, her musical tastes might be very different to what's expected. Depending on her true age, she might have some choice words about a few long-dead composers."
+          ]
+        },
+        {
+          "title": "Literature",
+          "description": [
+            "There's very little your lady loves more than a good book. You often find her reading in her study, always happy to discuss the work in her hands. In fact, she is |an aspiring writer herself, and you could easily convince her to let you read through her many drafts.",
+            "Surprisingly, or perhaps not, your tastes in literature often coincide."
+          ]
+        },
+        {
+          "title": "Hunting",
+          "description": [
+            "The need for blood is a part of her nature that your lady revels in, hunting her prey for both food and pleasure. She might enjoy chasing down a powerful beast and finally sinking down her fangs in its neck, or maybe tearing the weak into pieces, or perhaps she has no preference, the hunt in itself being enough for her."
+          ]
+        },
+        {
+          "title": "Sex",
+          "description": [
+            "Your lady has a libido that should not belong to somebody with literally no pulse. Despite her desires, she will not bed someone that she doesn't trust absolutely, and, in case she has no current partner, instead consumes truly staggering amounts of pornography. If your relationship permits, she'll constantly proposition you."
+          ]
+        },
+        {
+          "title": "Video Games",
+          "description": [
+            "Shame of shames, your lady's is addicted to video games. Often, she fakes being busy so that she can play for an hour or two. If this hobby of hers gets out into wider vampire society, she could become a laughingstock.",
+            "And, worst of all, she's awful at them: she can't even beat Dark Souls."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Complications",
+      "description": [
+        "And, finally, are there any circumstances that might make your life in your lady's service difficult? Things like those might push you into further honing yourself, granting one perk or talent of your choice.",
+        "Choose as many as you want."
+      ],
+      "choices": [
+        {
+          "title": "The Eldest's Request",
+          "description": [
+            "A vampire so ancient that any trace of humanity is long gone, replaced by whatever it has gained by supping on the denizens of the void. It is merely known as The Eldest, and it saved your life once. Now, it is calling in the favor. You know that whatever it is planning puts |the entire world in peril, but it has ways of forcing you to pay."
+          ]
+        },
+        {
+          "title": "Forceful Admirer",
+          "description": [
+            "A powerful vampire noble acting as an ambassador from overseas has taken an unhealthy interest in you. She is utterly obsessed with you, constantly demanding your presence, and generally making herself a terrible bother when you're not paying direct attention to her. She is influential enough that killing her would place you and your lady in a precarious position."
+          ]
+        },
+        {
+          "title": "The Reaper",
+          "description": [
+            "The result of a failed ritual that you were forcibly involved in a long time ago, and a tangible embodiment of your very own end. Every thirteen years it will manifest and chase you down, silent, it's thoughts unfathomable. Its power is great, and even the chance of defeating it will cost you almost everything you have. Still, you have faced Death many times: what's one more?"
+          ]
+        },
+        {
+          "title": "Her",
+          "description": [
+            "You thought she was dead, and she believed the same about you. When you saw her there, in the middle of the street, it was like your past was welcoming you back with a smile. Talking with her again is joyful in ways you thought lost, but uneasy: she has not let go of who you were long, long ago.",
+            "She wants you back."
+          ]
+        }
+      ]
     }
   ]
 }

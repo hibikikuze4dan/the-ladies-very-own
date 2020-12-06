@@ -75,6 +75,8 @@ const choicesSlice = createSlice({
     },
     perks: [],
     perksShown: "Human",
+    talents: [],
+    talentsShown: "Knight",
   },
   reducers: {
     setGender: (state, action) => {
@@ -123,6 +125,19 @@ const choicesSlice = createSlice({
         state.perks = [...state.perks, action.payload];
       }
     },
+    setTalentsShown: (state, action) => {
+      state.talentsShown = action.payload;
+    },
+    updateTalents: (state, action) => {
+      const talents = state.talents.map((talent) => talent.title);
+      if (includes(talents, action.payload.title)) {
+        state.talents = state.talents.filter((talent) => {
+          return !isEqual(talent, action.payload);
+        });
+      } else {
+        state.talents = [...state.talents, action.payload];
+      }
+    }
   },
 });
 
@@ -138,6 +153,8 @@ export const {
   setReason,
   setPerksShown,
   updatePerks,
+  setTalentsShown,
+  updateTalents,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -232,6 +249,20 @@ export const getPerks = (state) => {
 export const getPerksTitles = createSelector(getPerks, (perks) => {
   return perks.map((perk) => {
     return perk.title;
+  });
+});
+
+export const getTalentsShown = state => {
+  return state?.choices?.talentsShown;
+}
+
+export const getTalents = (state) => {
+  return state?.choices?.talents;
+};
+
+export const getTalentsTitles = createSelector(getTalents, (talents) => {
+  return talents.map((talent) => {
+    return talent.title;
   });
 });
 

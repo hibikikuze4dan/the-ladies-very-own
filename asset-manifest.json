@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/the-ladies-very-own/static/css/main.d59c670a.chunk.css",
+    "main.js": "/the-ladies-very-own/static/js/main.24b2b6cb.chunk.js",
+    "main.js.map": "/the-ladies-very-own/static/js/main.24b2b6cb.chunk.js.map",
+    "runtime-main.js": "/the-ladies-very-own/static/js/runtime-main.42ac331c.js",
+    "runtime-main.js.map": "/the-ladies-very-own/static/js/runtime-main.42ac331c.js.map",
+    "static/js/2.ecd1534b.chunk.js": "/the-ladies-very-own/static/js/2.ecd1534b.chunk.js",
+    "static/js/2.ecd1534b.chunk.js.map": "/the-ladies-very-own/static/js/2.ecd1534b.chunk.js.map",
+    "index.html": "/the-ladies-very-own/index.html",
+    "static/css/main.d59c670a.chunk.css.map": "/the-ladies-very-own/static/css/main.d59c670a.chunk.css.map",
+    "static/js/2.ecd1534b.chunk.js.LICENSE.txt": "/the-ladies-very-own/static/js/2.ecd1534b.chunk.js.LICENSE.txt",
+    "static/media/logo.db36153e.svg": "/the-ladies-very-own/static/media/logo.db36153e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42ac331c.js",
+    "static/js/2.ecd1534b.chunk.js",
+    "static/css/main.d59c670a.chunk.css",
+    "static/js/main.24b2b6cb.chunk.js"
+  ]
+}

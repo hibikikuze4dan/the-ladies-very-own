@@ -6,11 +6,13 @@ import { getEntourageSection } from "../../features/data/dataSlice";
 import {
   setEntourageRole,
   getPrimaryEntourageRole,
+  getSecondaryEntourageRole
 } from "../../features/choices/choicesSlice";
 
 const EntourageSection = () => {
   const { title, description, choices } = useSelector(getEntourageSection);
   const role = useSelector(getPrimaryEntourageRole);
+  const secondaryRole = useSelector(getSecondaryEntourageRole);
   const dispatch = useDispatch();
 
   return (
@@ -42,7 +44,8 @@ const EntourageSection = () => {
                     handleClick={() =>
                       dispatch(setEntourageRole({ primary: title }))
                     }
-                    picked={title === role}
+                    picked={title === role || title === secondaryRole}
+                    disabled={title === secondaryRole}
                     {...choice}
                   />
                 </GridListTile>

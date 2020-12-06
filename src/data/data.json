@@ -442,6 +442,174 @@
           }
         }
       ]
+    },
+    {
+      "title": "Human Perks",
+      "description": [],
+      "choices": [
+        {
+          "title": "Unconquerable Soul",
+          "description": [
+            "There is no terror that can cow your soul, no pain or fear that will make you lose your way. You are immune to all forms of mind control and have nigh endless willpower."
+          ]
+        },
+        {
+          "title": "Know the Night",
+          "description": [
+            "A lifetime of dealing with the supernatural has given you knowledge only a few mystics can match. You know the weaknesses and customs of all but the most ridiculously obscure denizens of the night."
+          ]
+        },
+        {
+          "title": "Neutral Mediator",
+          "description": [
+            "You are only beholden to your lady, and that lack of any further bias has made you a respected negotiator. You are asked to solve disputes almost daily, and most respect your words."
+          ]
+        },
+        {
+          "title": "Heaven's Blade",
+          "description": [
+            "It seems the seven heavens are blind to your new loyalties. You can summon holy light to bless weapons and destroy evil, and can also awaken the true power of holy symbols and rituals."
+          ]
+        },
+        {
+          "title": "Military Contacts",
+          "description": [
+            "You've worked with the army more than once, and the higher-ups owe you enough favors that you can request info, equipment, or even direct intervention if you are desperate enough."
+          ]
+        },
+        {
+          "title": "Never Alone",
+          "description": [
+            "You still have some friends, loyal and true enough to risk life and limb for you. They aren't as powerful as you, but backup is always nice."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vampire Perks",
+      "description": [],
+      "choices": [
+        {
+          "title": "Hemokinesis",
+          "description": [
+            "The ability to manipulate blood with your thoughts. Highly lethal against most living beings, but useless against the bloodless or undead."
+          ]
+        },
+        {
+          "title": "Mesmerizing Gaze",
+          "description": [
+            "A form of magical hypnotism where you can paralyze weak-willed being with just a look, and then lull them to sleep, feed on them, or even plant suggestions in their subconscious."
+          ]
+        },
+        {
+          "title": "Beckon Vermin",
+          "description": [
+            "You can control great numbers of rats, doves, bats, cockroaches and other vermin. Your controlled animals can share memories with you."
+          ]
+        },
+        {
+          "title": "Ghoul",
+          "description": [
+            "Your form of vampirism is both primitive and resilient. You are immune to sunlight and can feed on any kind of human flesh, alive or dead, apart from blood."
+          ]
+        },
+        {
+          "title": "Fleshwarper",
+          "description": [
+            "You can shapeshift into other forms, and you are skilled enough that you can refashion parts of your body as necessary."
+          ]
+        },
+        {
+          "title": "Dire Bond",
+          "description": [
+            "While not quite an Entourage of your own, you have at least three talented, young vampires under your orders."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lycanthrope Perks",
+      "description": [],
+      "choices": [
+        {
+          "title": "Alpha",
+          "description": [
+            "You posses abilities far above the average lycanthrope, marking you as able to lead a pack. You have enough clout with other lycanthropes to force them to do your bidding."
+          ]
+        },
+        {
+          "title": "Totem of the Pack",
+          "description": [
+            "With a howl you can call the spirits of your ancestors from across time and space. They manifest as great direwolves, and fight and hunt till their bodies hold on no more."
+          ]
+        },
+        {
+          "title": "Chimerism",
+          "description": [
+            "Your true form has the properties of many animals and beasts, resembling a mythological monster more than a common lycanthrope. It is immensely powerful."
+          ]
+        },
+        {
+          "title": "Blood Moon",
+          "description": [
+            "You have survived the trials of the Blood Moon, making you respected among all lycanthropes and immune to silver."
+          ]
+        },
+        {
+          "title": "Silver Fangs",
+          "description": [
+            "A mutation has bestowed your claws and teeth with holy power, which act as a bane for most denizens of the night."
+          ]
+        },
+        {
+          "title": "Spirit Paths",
+          "description": [
+            "Knowledge of how to traverse the spirit world allows you to travel large distances in mere minutes, but the arrival points tend to be imprecise."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stranger Perks",
+      "description": [],
+      "choices": [
+        {
+          "title": "Blinding Revelation",
+          "description": [
+            "Taking off your mask, you reveal your true form in a flash of light, causing horrible damage to the mind and senses of those unlucky enough to perceive you."
+          ]
+        },
+        {
+          "title": "Absorption",
+          "description": [
+            "Holding things from this world close, you can make them desintegrate as they become a permanent part of you."
+          ]
+        },
+        {
+          "title": "Cultist Circle",
+          "description": [
+            "Several men and women with a desire for forbidden knowledge have attached themselves to you, happy to do your bidding as long as you keep telling them truths of the void."
+          ]
+        },
+        {
+          "title": "Beckon Greater",
+          "description": [
+            "Taking off your mask and crying like a hungry baby, you call a part of your progenitor into this world, causing terrible destruction under their nightmarish power."
+          ]
+        },
+        {
+          "title": "Ichorous Morphology",
+          "description": [
+            "Your body is composed of a strongly acidic, dense fluid that forms squidlike shapes. Allows for shapeshifting and makes you almost immune to most forms of harm."
+          ]
+        },
+        {
+          "title": "Unsevered Autonomy",
+          "description": [
+            "You can sever parts of your body at will, which will move as you wish them to. If given enough nutrients they will grow to be full blown clones."
+          ]
+        }
+      ]
     }
   ]
 }

@@ -56,7 +56,9 @@ export const getDenizenChoices = createSelector(
 export const getFilteredDenizenChoices = createSelector(
   [getDenizenChoices, getPrimaryDenizenType, getSecondaryDenizenType],
   (choices, primary, secondary) => {
+    console.log(secondary);
     return choices.filter((choice) => {
+      console.log(choice.title);
       return choice.title !== primary && choice.title !== secondary;
     });
   }

@@ -1,6 +1,7 @@
 import { createSelector } from "reselect";
 import { createSlice } from "@reduxjs/toolkit";
 import { get } from "lodash";
+import { fromJS } from 'immutable';
 
 const choicesSlice = createSlice({
   name: "choices",
@@ -145,10 +146,11 @@ export const getSecondaryEntourageRole = createSelector(
 );
 
 export const getDenizen = (state) => {
-  return get(state, "choices.denizen");
+  return get(state, "choices.denizenType");
 };
 
 export const getPrimaryDenizenType = createSelector(getDenizen, (denizen) => {
+  console.log(denizen);
   return get(denizen, "primary");
 });
 

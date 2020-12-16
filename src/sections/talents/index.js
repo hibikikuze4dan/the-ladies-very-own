@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../../components/card";
-import { getTalents, getTalentsShown, getTalentsTitles, setTalentsShown, updateTalents } from "../../features/choices/choicesSlice";
+import { getTalentsShown, getTalentsTitles, setTalentsShown, updateTalents } from "../../features/choices/choicesSlice";
 import { getCurrentTalentsSection } from "../../features/data/dataSlice";
 
 const talentTypes = ["Knight", "Headservant", "Chamberlain", "Hidden Blade"];

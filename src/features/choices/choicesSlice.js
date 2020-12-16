@@ -1,7 +1,6 @@
 import { createSelector } from "reselect";
 import { createSlice } from "@reduxjs/toolkit";
 import { get, includes, isEqual } from "lodash";
-import { fromJS } from "immutable";
 
 const choicesSlice = createSlice({
   name: "choices",

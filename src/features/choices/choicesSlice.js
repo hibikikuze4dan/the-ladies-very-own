@@ -76,6 +76,8 @@ const choicesSlice = createSlice({
     perksShown: "Human",
     talents: [],
     talentsShown: "Knight",
+    hobbies: [],
+    complications: [],
   },
   reducers: {
     setGender: (state, action) => {
@@ -136,6 +138,26 @@ const choicesSlice = createSlice({
       } else {
         state.talents = [...state.talents, action.payload];
       }
+    },
+    updateHobbies: (state, action) => {
+      const hobbies = state.hobbies.map((hobby) => hobby.title);
+      if (includes(hobbies, action.payload.title)) {
+        state.hobbies = state.hobbies.filter((hobby) => {
+          return !isEqual(hobby, action.payload);
+        });
+      } else {
+        state.hobbies = [...state.hobbies, action.payload];
+      }
+    },
+    updateComplications: (state, action) => {
+      const complications = state.complications.map((complication) => complication.title);
+      if (includes(complications, action.payload.title)) {
+        state.complications = state.complications.filter((complication) => {
+          return !isEqual(complication, action.payload);
+        });
+      } else {
+        state.complications = [...state.complications, action.payload];
+      }
     }
   },
 });
@@ -154,6 +176,8 @@ export const {
   updatePerks,
   setTalentsShown,
   updateTalents,
+  updateHobbies,
+  updateComplications,
 } = choicesSlice.actions;
 
 export const getGender = (state) => {
@@ -264,5 +288,25 @@ export const getTalentsTitles = createSelector(getTalents, (talents) => {
     return talent.title;
   });
 });
+
+export const getHobbies = state => {
+  return state?.choices?.hobbies;
+}
+
+export const getHobbiesTitles = createSelector(getHobbies, hobbies => {
+  return hobbies.map(hobby => {
+    return hobby.title;
+  })
+})
+
+export const getComplications = state => {
+  return state?.choices?.complications;
+}
+
+export const getComplicationsTitles = createSelector(getComplications, complications => {
+  return complications.map(complication => {
+    return complication.title;
+  })
+})
 
 export default choicesSlice.reducer;

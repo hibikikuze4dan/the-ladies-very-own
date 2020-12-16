@@ -121,4 +121,12 @@ export const getCurrentTalentsSection = createSelector(getTalentsSections, getTa
   return talentsSections[talentsShown];
 })
 
+export const getHobbiesSection = createSelector(getSections, (sections) => {
+  return find(sections, { title: "Your Lady's Hobbies" });
+});
+
+export const getComplictionsSection = createSelector(getSections, sections => {
+  return find(sections, { title: 'Complications' })
+})
+
 export default dataSlice.reducer;

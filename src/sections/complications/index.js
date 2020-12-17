@@ -12,9 +12,7 @@ import {
   getComplicationsTitles,
   updateComplications,
 } from "../../features/choices/choicesSlice";
-import {
-  getComplictionsSection,
-} from "../../features/data/dataSlice";
+import { getComplictionsSection } from "../../features/data/dataSlice";
 
 const ComplicationsSection = () => {
   const dispatch = useDispatch();

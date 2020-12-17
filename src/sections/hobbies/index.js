@@ -12,9 +12,7 @@ import {
   updateHobbies,
   getHobbiesTitles,
 } from "../../features/choices/choicesSlice";
-import {
-  getHobbiesSection,
-} from "../../features/data/dataSlice";
+import { getHobbiesSection } from "../../features/data/dataSlice";
 
 const HobbiesSection = () => {
   const dispatch = useDispatch();

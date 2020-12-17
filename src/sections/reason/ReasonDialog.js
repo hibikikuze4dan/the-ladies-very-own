@@ -7,8 +7,6 @@ import {
   InputLabel,
   MenuItem,
   Select,
-  useMediaQuery,
-  useTheme,
 } from "@material-ui/core";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -25,8 +23,6 @@ import {
 
 const ReasonDialog = ({ type, open, handleClose }) => {
   const dispatch = useDispatch();
-  const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const isHybrid = type === "Hybrid";
   const title = isHybrid
     ? "Choose Your Extra Species"

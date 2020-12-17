@@ -1,7 +1,6 @@
 import { Grid, GridList, GridListTile, Typography } from "@material-ui/core";
 import React from "react";
-import { useSelector, useDispatch, shallowEqual } from "react-redux";
-import { isEqual } from "lodash";
+import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/card";
 import { getDenizenSection } from "../../features/data/dataSlice";
 import {

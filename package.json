@@ -5,7 +5,7 @@
   "homepage": "https://hibikikuze4dan.github.io/the-ladies-very-own",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
+    "@material-ui/icons": "^4.11.2",
     "@reduxjs/toolkit": "^1.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/the-ladies-very-own/static/css/main.d59c670a.chunk.css",
-    "main.js": "/the-ladies-very-own/static/js/main.07642275.chunk.js",
-    "main.js.map": "/the-ladies-very-own/static/js/main.07642275.chunk.js.map",
+    "main.css": "/the-ladies-very-own/static/css/main.1910c953.chunk.css",
+    "main.js": "/the-ladies-very-own/static/js/main.4f5a4fe1.chunk.js",
+    "main.js.map": "/the-ladies-very-own/static/js/main.4f5a4fe1.chunk.js.map",
     "runtime-main.js": "/the-ladies-very-own/static/js/runtime-main.42ac331c.js",
     "runtime-main.js.map": "/the-ladies-very-own/static/js/runtime-main.42ac331c.js.map",
-    "static/js/2.407679f8.chunk.js": "/the-ladies-very-own/static/js/2.407679f8.chunk.js",
-    "static/js/2.407679f8.chunk.js.map": "/the-ladies-very-own/static/js/2.407679f8.chunk.js.map",
+    "static/js/2.0b9e44ce.chunk.js": "/the-ladies-very-own/static/js/2.0b9e44ce.chunk.js",
+    "static/js/2.0b9e44ce.chunk.js.map": "/the-ladies-very-own/static/js/2.0b9e44ce.chunk.js.map",
     "index.html": "/the-ladies-very-own/index.html",
-    "static/css/main.d59c670a.chunk.css.map": "/the-ladies-very-own/static/css/main.d59c670a.chunk.css.map",
-    "static/js/2.407679f8.chunk.js.LICENSE.txt": "/the-ladies-very-own/static/js/2.407679f8.chunk.js.LICENSE.txt",
-    "static/media/logo.db36153e.svg": "/the-ladies-very-own/static/media/logo.db36153e.svg"
+    "static/css/main.1910c953.chunk.css.map": "/the-ladies-very-own/static/css/main.1910c953.chunk.css.map",
+    "static/js/2.0b9e44ce.chunk.js.LICENSE.txt": "/the-ladies-very-own/static/js/2.0b9e44ce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.42ac331c.js",
-    "static/js/2.407679f8.chunk.js",
-    "static/css/main.d59c670a.chunk.css",
-    "static/js/main.07642275.chunk.js"
+    "static/js/2.0b9e44ce.chunk.js",
+    "static/css/main.1910c953.chunk.css",
+    "static/js/main.4f5a4fe1.chunk.js"
   ]
 }

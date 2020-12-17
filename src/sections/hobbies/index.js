@@ -1,20 +1,24 @@
 import {
-  Button,
   Divider,
   Grid,
   Typography,
   GridList,
   GridListTile,
 } from "@material-ui/core";
-import React from 'react';
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../../components/card";
-import { getTalentsShown, setTalentsShown, updateTalents, getHobbies, updateHobbies, getHobbiesTitles } from "../../features/choices/choicesSlice";
-import { getCurrentHobbiesSection, getHobbiesSection } from "../../features/data/dataSlice";
+import {
+  updateHobbies,
+  getHobbiesTitles,
+} from "../../features/choices/choicesSlice";
+import {
+  getHobbiesSection,
+} from "../../features/data/dataSlice";
 
 const HobbiesSection = () => {
-  const dispatch = useDispatch()
-  const {title, description, choices} = useSelector(getHobbiesSection);
+  const dispatch = useDispatch();
+  const { title, description, choices } = useSelector(getHobbiesSection);
   const currentHobbies = useSelector(getHobbiesTitles);
 
   return (
@@ -43,11 +47,7 @@ const HobbiesSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() =>
-                      dispatch(
-                        updateHobbies(choice)
-                      )
-                    }
+                    handleClick={() => dispatch(updateHobbies(choice))}
                     picked={currentHobbies.includes(choice.title)}
                     {...choice}
                   />
@@ -58,7 +58,7 @@ const HobbiesSection = () => {
         </Grid>
       </Grid>
     </Grid>
-  )
+  );
 };
 
-export default HobbiesSection
+export default HobbiesSection;

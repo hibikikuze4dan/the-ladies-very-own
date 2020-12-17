@@ -150,7 +150,9 @@ const choicesSlice = createSlice({
       }
     },
     updateComplications: (state, action) => {
-      const complications = state.complications.map((complication) => complication.title);
+      const complications = state.complications.map(
+        (complication) => complication.title
+      );
       if (includes(complications, action.payload.title)) {
         state.complications = state.complications.filter((complication) => {
           return !isEqual(complication, action.payload);
@@ -158,7 +160,7 @@ const choicesSlice = createSlice({
       } else {
         state.complications = [...state.complications, action.payload];
       }
-    }
+    },
   },
 });
 
@@ -275,9 +277,9 @@ export const getPerksTitles = createSelector(getPerks, (perks) => {
   });
 });
 
-export const getTalentsShown = state => {
+export const getTalentsShown = (state) => {
   return state?.choices?.talentsShown;
-}
+};
 
 export const getTalents = (state) => {
   return state?.choices?.talents;
@@ -289,24 +291,27 @@ export const getTalentsTitles = createSelector(getTalents, (talents) => {
   });
 });
 
-export const getHobbies = state => {
+export const getHobbies = (state) => {
   return state?.choices?.hobbies;
-}
+};
 
-export const getHobbiesTitles = createSelector(getHobbies, hobbies => {
-  return hobbies.map(hobby => {
+export const getHobbiesTitles = createSelector(getHobbies, (hobbies) => {
+  return hobbies.map((hobby) => {
     return hobby.title;
-  })
-})
+  });
+});
 
-export const getComplications = state => {
+export const getComplications = (state) => {
   return state?.choices?.complications;
-}
+};
 
-export const getComplicationsTitles = createSelector(getComplications, complications => {
-  return complications.map(complication => {
-    return complication.title;
-  })
-})
+export const getComplicationsTitles = createSelector(
+  getComplications,
+  (complications) => {
+    return complications.map((complication) => {
+      return complication.title;
+    });
+  }
+);
 
 export default choicesSlice.reducer;

@@ -114,19 +114,26 @@ export const getTalentsSections = createSelector(getSections, (sections) => {
     Headservant: find(sections, { title: "Headservant Talents" }),
     Chamberlain: find(sections, { title: "Chamberlain Talents" }),
     "Hidden Blade": find(sections, { title: "Hidden Blade Talents" }),
-  }
-})
+  };
+});
 
-export const getCurrentTalentsSection = createSelector(getTalentsSections, getTalentsShown, (talentsSections, talentsShown) => {
-  return talentsSections[talentsShown];
-})
+export const getCurrentTalentsSection = createSelector(
+  getTalentsSections,
+  getTalentsShown,
+  (talentsSections, talentsShown) => {
+    return talentsSections[talentsShown];
+  }
+);
 
 export const getHobbiesSection = createSelector(getSections, (sections) => {
   return find(sections, { title: "Your Lady's Hobbies" });
 });
 
-export const getComplictionsSection = createSelector(getSections, sections => {
-  return find(sections, { title: 'Complications' })
-})
+export const getComplictionsSection = createSelector(
+  getSections,
+  (sections) => {
+    return find(sections, { title: "Complications" });
+  }
+);
 
 export default dataSlice.reducer;

@@ -1,20 +1,24 @@
 import {
-  Button,
   Divider,
   Grid,
   Typography,
   GridList,
   GridListTile,
 } from "@material-ui/core";
-import React from 'react';
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Card from "../../components/card";
-import { getTalentsShown, setTalentsShown, updateTalents, getHobbies, updateHobbies, getComplicationsTitles, updateComplications } from "../../features/choices/choicesSlice";
-import { getComplictionsSection, getCurrentHobbiesSection, getHobbiesSection } from "../../features/data/dataSlice";
+import {
+  getComplicationsTitles,
+  updateComplications,
+} from "../../features/choices/choicesSlice";
+import {
+  getComplictionsSection,
+} from "../../features/data/dataSlice";
 
 const ComplicationsSection = () => {
-  const dispatch = useDispatch()
-  const {title, description, choices} = useSelector(getComplictionsSection);
+  const dispatch = useDispatch();
+  const { title, description, choices } = useSelector(getComplictionsSection);
   const currentComplications = useSelector(getComplicationsTitles);
 
   return (
@@ -43,11 +47,7 @@ const ComplicationsSection = () => {
               return (
                 <GridListTile key={`grid-list-tile-${index}`}>
                   <Card
-                    handleClick={() =>
-                      dispatch(
-                        updateComplications(choice)
-                      )
-                    }
+                    handleClick={() => dispatch(updateComplications(choice))}
                     picked={currentComplications.includes(choice.title)}
                     {...choice}
                   />
@@ -58,7 +58,7 @@ const ComplicationsSection = () => {
         </Grid>
       </Grid>
     </Grid>
-  )
+  );
 };
 
-export default ComplicationsSection
+export default ComplicationsSection;
